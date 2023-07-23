@@ -61,7 +61,7 @@ const displayBad = () => {
     str += ` <tr>
                   <td>${i + 1}</td>
                   <td>${item.task}</td>
-                  <td>${item.hr}</td>
+                  <td>${item.hr} hrs</td>
                   <td class="text-end">
                   <button class="btn btn-warning" onclick="handleOnSwitch('${
                     item.id
