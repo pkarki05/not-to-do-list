@@ -23,6 +23,12 @@ const handleOnSubmit = (e) => {
     taskList.push(obj);
     display();
     total.innerHTML = `  ${totalHours} Hours allocated for a week and ${remainingHours}  Hours remaining`;
+    //clear the input fields after form submission
+
+    const taskInput = document.querySelector('input[name="task"]');
+    const hrInput = document.querySelector('input[name="hr"]');
+    taskInput.value = "";
+    hrInput.value = "";
   } else {
     total.style.color = "red";
     total.innerHTML = "Total hours per week exceeded";
